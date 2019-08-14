@@ -1,0 +1,84 @@
+.title {
+  font-size: 1rem;
+}
+
+.sidebar {
+  position: fixed;
+  max-width: 300px;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #343131;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar .sidebar-header {
+  border-right: solid 1px #c9c9c9;
+  text-align: center;
+  background-color: #efefef;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.sidebar .sidebar-header .sidebar-logo {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.sidebar .sidebar-header .version {
+  color: #777777;
+}
+
+.sidebar a {
+  outline: none;
+  cursor: pointer;
+}
+
+.nav .nav-link {
+  color: #b3b3b3;
+  padding: 0.25rem 1.5rem;
+}
+
+.nav .nav-link:hover {
+  background-color: #4e4a4a;
+}
+
+.nav .nav-item > .nav-link.active {
+  background-color: #fcfcfc;
+}
+
+.nav .nav-item > .nav-link.active {
+  color: #404040;
+  font-weight: bold;
+  border-top: solid 1px #c9c9c9;
+  border-bottom: solid 1px #c9c9c9;
+}
+
+.nav .nav-item .nav-subitem > .nav-link {
+  padding-left: 2.5rem;
+}
+
+.nav .nav-item .nav-subitem > .nav-link.active:hover {
+  background-color: #d6d6d6;
+}
+
+.nav .nav-link.active + .nav .nav-subitem > .nav-link {
+  color: #404040;
+  background-color: #e3e3e3;
+  border-right: solid 1px #c9c9c9;
+}
+
+.nav .nav-link.active + .nav .nav-subitem > .nav-link.active {
+  font-weight: bold;
+  background-color: #c9c9c9;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+

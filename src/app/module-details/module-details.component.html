@@ -1,0 +1,13 @@
+<div *ngIf="material">
+  <h1> {{ material.name }} </h1>
+  <h4> Prepared by: {{ material.author }} </h4>
+  <p> {{ material.description }} </p>
+  <p>{{ material.size }}</p>
+
+  <!-- <iframe src={{ material.url }} width="402" height="327" frameborder="0" scrolling="no"></iframe> -->
+  <!-- <iframe src="https://onedrive.live.com/embed?cid=55F73C24FB9E4AFA&resid=55F73C24FB9E4AFA%21115&authkey=ACB9EpfnbKLVWR8&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe> -->
+  
+  <!-- <iframe src="https://onedrive.live.com/embed?cid=55F73C24FB9E4AFA&resid=55F73C24FB9E4AFA%21115&authkey=ACB9EpfnbKLVWR8&em=2" [attr.height] = "material.size">doesn't support iframe</iframe> -->
+  <iframe [src]="material.url | safe">Your browser doesn't support iframe</iframe>
+
+</div>

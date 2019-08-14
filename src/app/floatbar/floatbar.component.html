@@ -1,0 +1,15 @@
+<!-- Container for sidebar(s) + page content -->
+<ng-sidebar-container id="floater">
+ 
+    <!-- A sidebar -->
+    <ng-sidebar [(opened)]="_opened">
+      <app-module-list></app-module-list>
+      <p><a closeSidebar>This will close the sidebar too</a></p>
+    </ng-sidebar>
+
+    <!-- Page content -->
+    <div ng-sidebar-content>
+      <button (click)="_toggleSidebar()">></button>
+    </div>
+
+  </ng-sidebar-container>
