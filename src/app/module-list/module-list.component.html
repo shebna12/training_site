@@ -1,8 +1,8 @@
 <h1> Internship Materials </h1>
 <div *ngFor="let material of materials; index as materialId">
-  <h3>
+  <p>
     <a [title]="material.name + ' details'" [routerLink]="['/imbue', materialId]" closeSidebar>
       {{ material.name }}
     </a>
-  </h3>
+  </p>
 </div>
