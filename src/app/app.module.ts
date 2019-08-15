@@ -15,6 +15,7 @@ import { SafePipe } from './safe.pipe';
 import { TopbarComponent } from './topbar/topbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarModule } from 'ng-sidebar';
+import { AuthenticationModule } from './authentication/authentication.module';
 
 
 @NgModule({
@@ -34,7 +35,9 @@ import { SidebarModule } from 'ng-sidebar';
     CoreModule,
     NavbarModule,
     BrowserAnimationsModule,
-    SidebarModule.forRoot()
+    SidebarModule.forRoot(),
+    AuthenticationModule,
+ 
 
     // RouterModule.forRoot([
     //   { path: 'imbue', component: ModuleListComponent},
