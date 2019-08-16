@@ -16,6 +16,11 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarModule } from 'ng-sidebar';
 import { AuthenticationModule } from './authentication/authentication.module';
+import { DocumodeComponent } from './documode/documode.component';
+import { MainComponent } from './main/main.component';
+import { PresmodeComponent } from './presmode/presmode.component';
+import { AboutComponent } from './about/about.component';
+// import { DocumodeModule } from './documode/documode.module';
 
 
 @NgModule({
@@ -25,7 +30,11 @@ import { AuthenticationModule } from './authentication/authentication.module';
     ModuleDetailsComponent,
     SafePipe,
     TopbarComponent,
-    FloatbarComponent
+    FloatbarComponent,
+    DocumodeComponent,
+    MainComponent,
+    PresmodeComponent,
+    AboutComponent
 
   ],
   imports: [
@@ -37,6 +46,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
     BrowserAnimationsModule,
     SidebarModule.forRoot(),
     AuthenticationModule,
+    // DocumodeModule
  
 
     // RouterModule.forRoot([

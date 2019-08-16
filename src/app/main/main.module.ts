@@ -11,6 +11,7 @@ import { MainComponent } from './main.component';
     MainRoutingModule,
     MarkdownModule.forChild()
   ],
-  declarations: [MainComponent]
+  declarations: [MainComponent],
+  exports: [MainComponent]
 })
 export class MainModule { }
