@@ -20,6 +20,8 @@ import { DocumodeComponent } from './documode/documode.component';
 import { MainComponent } from './main/main.component';
 import { PresmodeComponent } from './presmode/presmode.component';
 import { AboutComponent } from './about/about.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
 // import { DocumodeModule } from './documode/documode.module';
 
 
@@ -34,11 +36,13 @@ import { AboutComponent } from './about/about.component';
     DocumodeComponent,
     MainComponent,
     PresmodeComponent,
-    AboutComponent
+    AboutComponent,
+    DashboardComponent
 
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     MarkdownModule.forRoot(),
     CoreModule,
@@ -46,14 +50,6 @@ import { AboutComponent } from './about/about.component';
     BrowserAnimationsModule,
     SidebarModule.forRoot(),
     AuthenticationModule,
-    // DocumodeModule
- 
-
-    // RouterModule.forRoot([
-    //   { path: 'imbue', component: ModuleListComponent},
-    //   { path: 'imbue/:materialId', component: ModuleDetailsComponent},
-    // ])
- 
   ],
   providers: [],
   bootstrap: [AppComponent]

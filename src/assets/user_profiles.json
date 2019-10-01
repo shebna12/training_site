@@ -1,0 +1,17 @@
+[
+    {
+      "name": "jdcruz",
+      "module_access": ["comp1","bio1"],
+      "mode": 0
+    },
+    {
+      "name": "sdfabilloren",
+      "module_access": ["comp1"],
+      "mode": 1
+    },
+    {
+      "name": "jjdoe",
+      "module_access": ["comp1","bio1","comp2"],
+      "mode": 2
+    }
+  ]

@@ -6,14 +6,16 @@ import { ModuleDetailsComponent } from './module-details/module-details.componen
 import { DocumodeComponent } from './documode/documode.component';
 import { PresmodeComponent } from './presmode/presmode.component';
 import { AboutComponent } from './about/about.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   // { path: '', pathMatch: 'full', loadChildren: './main/main.module#MainModule' },
-  { path: 'about', component: AboutComponent}
+  { path: 'about', component: AboutComponent},
   { path: 'imbue', component: ModuleListComponent},
   { path: 'imbue/:materialId', component: ModuleDetailsComponent},
   { path: 'documentation_mode', component: DocumodeComponent},
-  { path: 'presentation_mode', component: PresmodeComponent }
+  { path: 'presentation_mode', component: PresmodeComponent },
+  { path: 'dashboard', component: DashboardComponent}
 ];
 
 @NgModule({
